@@ -7,62 +7,94 @@
   <style>
     body {
       margin: 0;
-      background-color: #000814;
-      color: white;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1117;
+      color: white;
       text-align: center;
     }
 
-    header {
-      background-color: #001f3f;
-      padding: 20px;
+    nav {
+      background-color: #0b0f1a;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     }
 
-    header a {
-      background: #0074D9;
-      color: white;
-      padding: 12px 20px;
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
       text-decoration: none;
-      border-radius: 8px;
+      color: white;
+      background: linear-gradient(to bottom, #3388ff, #0055cc);
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px #002a80;
+      transition: all 0.2s ease-in-out;
       font-weight: bold;
-      box-shadow: 0 4px #005fa3;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    header a:hover {
+    nav ul li a:hover {
+      background: linear-gradient(to bottom, #66aaff, #0033aa);
       transform: translateY(-2px);
-      box-shadow: 0 6px #005fa3;
+      box-shadow: 0 6px #001a66;
     }
 
-    .logo {
-      max-width: 900px;
-      width: 100%;
-      margin: 50px auto 40px;
-      display: block;
+    .main {
+      padding: 50px 20px;
+    }
+
+    .main img {
+      width: 300px;
+      max-width: 90%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.3em;
+      margin: 0.2em 0;
     }
 
     footer {
-      background-color: #001f3f;
-      padding: 15px;
+      margin-top: 50px;
+      padding: 20px;
       font-size: 0.9em;
-      color: #aaa;
+      color: #888;
+      border-top: 1px solid #333;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
-  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <img src="quartzgroup1.png" alt="Quartzgroup Logo" class="logo"/>
+  <div class="main">
+    <img src="quartzgroup1.png" alt="Quartzgroup Logo" />
+    <h1>QUARTZGROUP</h1>
+    <p>Innovation with Purpose.</p>
+    <p>Intelligence with Ethics.</p>
+  </div>
 
   <footer>
     © 2025 Quartzgroup. All rights reserved.
